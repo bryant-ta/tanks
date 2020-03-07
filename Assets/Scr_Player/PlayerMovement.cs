@@ -28,8 +28,9 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(curSpeed);                          // Max speed done in inspector "Linear Drag"
 
         // Steering
-
-        rb.MoveRotation(transform.rotation. turn * turnAccel * 10);
-        print(turn * turnAccel * 10);
+        //Quaternion rot = 
+        //rb.MoveRotation(transform.rotation. turn * turnAccel * 10);
+        //print(turn * turnAccel * 10);
+        transform.Rotate(0, 0, turn * turnAccel);
     }
 }
